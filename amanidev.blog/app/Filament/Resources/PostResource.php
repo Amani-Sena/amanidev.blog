@@ -48,15 +48,9 @@ class PostResource extends Resource
                     ->live(onBlur: true)
                     ->afterStateUpdated(fn (Set $set, ?string $state) => $set('slug', Str::slug($state))),
                     TextInput::make('slug')->required(),
-<<<<<<< HEAD
-                    FileUpload::make('image')->image()->directory('posts_img'),
-                    RichEditor::make('content'),
-                    Toggle::make('is_published')
-=======
                     FileUpload::make('image')->image()->directory('posts'),
                     RichEditor::make('content'),
                     Toggle::make('is_published'),
->>>>>>> 37b3945 (Atualizações de performance e do Readme)
                     
                 ])
             ]);

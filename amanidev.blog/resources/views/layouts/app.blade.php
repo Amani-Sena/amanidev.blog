@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Simplificando o código, traduzindo a experiência!">
+    <meta name="author" content="Amani, amanidev.blog">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="amanidev.blog">
+    <meta property="og:description" content="Simplificando o código, traduzindo a experiência!">
+    <meta property="og:image" content="https://blog.amanidev.com/img/amanidevblog.jpg">
     <title>@yield('title', '- amanidev.blog')</title>
     <script src="https://kit.fontawesome.com/a2b163b64e.js" crossorigin="anonymous" defer></script>
     <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">

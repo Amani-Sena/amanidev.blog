@@ -35,15 +35,9 @@ class PostsRelationManager extends RelationManager
                     ->live(onBlur: true)
                     ->afterStateUpdated(fn (Set $set, ?string $state) => $set('slug', Str::slug($state))),
                     TextInput::make('slug')->required(),
-<<<<<<< HEAD
-                    FileUpload::make('image')->image()->directory('posts_img'),
-                    RichEditor::make('content'),
-                    Toggle::make('is_published')
-=======
                     FileUpload::make('image')->image()->directory('posts'),
                     RichEditor::make('content'),
                     Toggle::make('is_published'),
->>>>>>> 37b3945 (Atualizações de performance e do Readme)
                     
                 ])
             ]);
@@ -56,11 +50,7 @@ class PostsRelationManager extends RelationManager
             ->columns([
                 TextColumn::make('id')->sortable(),
                 ImageColumn::make('image'),
-<<<<<<< HEAD
-                TextColumn::make('title')->sortable(),
-=======
                 TextColumn::make('title')->sortable()->searchable(),
->>>>>>> 37b3945 (Atualizações de performance e do Readme)
                 TextColumn::make('slug'),
                 IconColumn::make('is_published'),
             ])

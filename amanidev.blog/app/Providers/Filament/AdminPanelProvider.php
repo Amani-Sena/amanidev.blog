@@ -3,10 +3,7 @@
 namespace App\Providers\Filament;
 
 use Filament\Http\Middleware\Authenticate;
-<<<<<<< HEAD
-=======
 use Filament\Http\Middleware\AuthenticateSession;
->>>>>>> 37b3945 (Atualizações de performance e do Readme)
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use Filament\Pages;
@@ -18,10 +15,6 @@ use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Routing\Middleware\SubstituteBindings;
-<<<<<<< HEAD
-use Illuminate\Session\Middleware\AuthenticateSession;
-=======
->>>>>>> 37b3945 (Atualizações de performance e do Readme)
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 

@@ -11,8 +11,6 @@ class ListPosts extends ListRecords
 {
     protected static string $resource = PostResource::class;
 
-<<<<<<< HEAD
-=======
     protected function getHeaderWidgets(): array
     {
         return [
@@ -20,23 +18,10 @@ class ListPosts extends ListRecords
         ];
     }
 
->>>>>>> 37b3945 (Atualizações de performance e do Readme)
     protected function getHeaderActions(): array
     {
         return [
             Actions\CreateAction::make(),
         ];
     }
-<<<<<<< HEAD
-
-    protected function getHeaderWidgets(): array
-    {
-        return [
-            StatsOverview::class,
-        ];
-    }
-
-
-=======
->>>>>>> 37b3945 (Atualizações de performance e do Readme)
 }

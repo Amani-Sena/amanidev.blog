@@ -14,10 +14,6 @@ class StatsOverview extends BaseWidget
             Stat::make('All Posts', Post::all()->count()),
             Stat::make('Published', Post::where('is_published', true)->count()),
             Stat::make('Un Published', Post::where('is_published', false)->count()),
-<<<<<<< HEAD
-            
-=======
->>>>>>> 37b3945 (Atualizações de performance e do Readme)
         ];
     }
 }
