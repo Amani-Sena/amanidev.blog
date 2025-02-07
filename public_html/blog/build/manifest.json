@@ -1,0 +1,43 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-BuT532b9.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/fonts/Louis George Cafe Bold.woff": {
+    "file": "assets/Louis George Cafe Bold-oze70vtH.woff",
+    "src": "resources/fonts/Louis George Cafe Bold.woff"
+  },
+  "resources/fonts/Louis George Cafe Light.woff": {
+    "file": "assets/Louis George Cafe Light-DqtZBhz_.woff",
+    "src": "resources/fonts/Louis George Cafe Light.woff"
+  },
+  "resources/fonts/Louis George Cafe.woff": {
+    "file": "assets/Louis George Cafe-7YJdkYWs.woff",
+    "src": "resources/fonts/Louis George Cafe.woff"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-Xaw6OIO1.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/category-selector.js": {
+    "file": "assets/category-selector-BFHWKwIN.js",
+    "name": "category-selector",
+    "src": "resources/js/category-selector.js",
+    "isEntry": true
+  },
+  "resources/js/handleScroll.js": {
+    "file": "assets/handleScroll-DKE7agFt.js",
+    "name": "handleScroll",
+    "src": "resources/js/handleScroll.js",
+    "isEntry": true
+  },
+  "resources/js/mobile-menu.js": {
+    "file": "assets/mobile-menu-l0sNRNKZ.js",
+    "name": "mobile-menu",
+    "src": "resources/js/mobile-menu.js",
+    "isEntry": true
+  }
+}

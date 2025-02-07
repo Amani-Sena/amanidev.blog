@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,6 +63,15 @@
             <div class="con-video-hero">
                 <video autoplay muted loop id="video-hero" data-aos="zoom-out" data-aos-delay="1600"
                     data-aos-duration="1400" preload="auto" poster="img/poster_hero.webp">
+=======
+@extends('layouts.app')
+@section('title', 'Início - amanidev.blog')
+    
+@section('content')
+        <section class="bg-hero" id="hero">
+            <div class="con-video-hero">
+                <video autoplay muted loop id="video-hero" preload="auto" poster="img/poster_hero.webp">
+>>>>>>> 37b3945 (Atualizações de performance e do Readme)
                     <source src="img/bg_hero.mp4" type="video/mp4">
                 </video>
             </div>
@@ -74,27 +84,59 @@
 
         <section id="section-posts">
             <div class="posts-categories-row">
+<<<<<<< HEAD
                 <a href="#" class="category-link selected">Todos os posts</a>
                 @foreach ($categories as $category)
                 <a href="#" class="category-link">{{ $category->name }}</a>
                 @endforeach
                 <a href="#" class="category-link"></a>
+=======
+                @if ($selectedCategory != null)
+                    <a href="/posts" class="category-link">Todos os posts</a>
+                    <a href="/posts/{{$selectedCategory->id}}" class="category-link selected">{{ $selectedCategory->name }}</a>
+                @else
+                    <a href="/posts" class="category-link selected">Todos os posts</a>
+                @endif
+                @foreach ($categories as $category)
+                    @if($selectedCategory != null)
+                        @if($category->id != $selectedCategory->id)
+                            <a href="/posts/{{$category->id}}" class="category-link">{{ $category->name }}</a>
+                        @endif
+                        @else
+                            <a href="/posts/{{$category->id}}" class="category-link">{{ $category->name }}</a>
+                    @endif
+                @endforeach
+>>>>>>> 37b3945 (Atualizações de performance e do Readme)
                 
             </div>
             <div class="posts-grid-container">
                 @foreach ($posts as $post)
                     <div class="post-grid-item">
+<<<<<<< HEAD
                         <img src="storage/{{ $post->image }}" alt="Post Thumbnail">
                         <h4>{{ $post->title }}</h4>
                         <span>{{ $post->created_at }}</span>
                         <p>{{ strip_tags($post->content) }}</p>
                         <div class="post-grid-btn"><a href="/post/{{$post->id}}">Ver mais</a><em>></em></div>
+=======
+                        <a href="/post/{{$post->id}}">
+                            <img src="{{ asset('storage/'.$post->image) }}" alt="Post Thumbnail">
+                            <h4>{{ $post->title }}</h4>
+                            <span>{{ $post->created_at }}</span>
+                            <p>{{ strip_tags($post->content) }}</p>
+                            <div class="post-grid-btn"><a href="/post/{{$post->id}}">Ver mais</a><em>></em></div>
+                        </a>
+>>>>>>> 37b3945 (Atualizações de performance e do Readme)
                     </div>
                 @endforeach
                 
                 
             </div>
 
+<<<<<<< HEAD
+=======
+        <a href="/posts">
+>>>>>>> 37b3945 (Atualizações de performance e do Readme)
             <div class="buttons-form">
                 <div class="form-btn">
                     <button type="submit" class="btn" id="form_btn">
@@ -106,6 +148,7 @@
                     </button>
                 </div>
             </div>
+<<<<<<< HEAD
         </section>
 
         <footer>
@@ -126,3 +169,11 @@
     <script src="./js/category-selector.js" defer></script>
 </body>
 </html>
+=======
+        </a>
+        </section>
+
+    <script src="./build/assets/handleScroll-DKE7agFt.js" defer></script>
+    <script src="./build/assets/category-selector-BFHWKwIN.js" defer></script>
+    @endsection
+>>>>>>> 37b3945 (Atualizações de performance e do Readme)

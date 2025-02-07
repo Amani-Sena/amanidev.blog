@@ -1,0 +1,1 @@
+window.addEventListener("scroll",()=>{const o=document.querySelectorAll(".nav-link"),s=document.getElementById("hero").offsetHeight;window.scrollY>s-74?o.forEach(e=>e.classList.add("scrolled")):o.forEach(e=>e.classList.remove("scrolled"))});

@@ -39,7 +39,11 @@ class TagsRelationManager extends RelationManager
             ->recordTitleAttribute('name')
             ->columns([
                 TextColumn::make('id')->sortable(),
+<<<<<<< HEAD
                 TextColumn::make('name')->sortable(),
+=======
+                TextColumn::make('name')->sortable()->searchable(),
+>>>>>>> 37b3945 (Atualizações de performance e do Readme)
                 TextColumn::make('slug'),
             ])
             ->filters([

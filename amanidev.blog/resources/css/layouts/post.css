@@ -1,0 +1,198 @@
+#section-post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 14rem;
+  width: 100%;
+}
+
+.post-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  gap: 4rem;
+  margin-bottom: 8rem;
+}
+
+.post-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+  width: 50rem;
+}
+.post-content h1, .post-content h2, .post-content h3 {
+  color: var(--pink);
+  text-align: left;
+}
+.post-content h1 {
+  font-size: 3.2rem;
+}
+.post-content h2 {
+  font-size: 2.2rem;
+}
+.post-content p {
+  color: var(--black);
+}
+.post-content pre {
+  color: var(--white);
+  background-color: var(--pink);
+  padding: 1rem;
+  font-size: 1.2rem;
+  overflow-x: auto;
+  width: 90%;
+}
+.post-content a {
+  color: var(--pink);
+}
+.post-content span {
+  text-decoration: none !important;
+}
+
+.post-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 24rem;
+}
+
+.post-alt-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.post-alt-links h5 {
+  color: var(--pink);
+  font-size: 1.3rem;
+  margin-top: 0.2rem;
+}
+.post-alt-links a {
+  color: var(--black);
+  font-size: 1.2rem;
+  transition: 0.4s;
+}
+.post-alt-links a:hover {
+  color: var(--pink);
+}
+
+.post-alt-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.post-alt-post {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.post-alt-post img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 10rem;
+  height: 6rem;
+}
+.post-alt-post p {
+  color: var(--black);
+  font-size: 1.1rem;
+  max-width: 14rem;
+}
+
+.post-alt-post:hover p {
+  color: var(--pink);
+}
+.post-alt-post:hover img {
+  transform: scale(1.02);
+}
+
+.post-alt-tags {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.post-alt-tags span {
+  background-color: var(--pink);
+  color: var(--white);
+  padding: 0.6rem;
+}
+
+@media (max-width: 900px) {
+  .post-container {
+    flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0rem;
+    gap: 0rem;
+  }
+  .post-content {
+    width: 100%;
+  }
+  .post-content h1 {
+    font-size: 2rem;
+  }
+  .post-content h2 {
+    font-size: 1.8rem;
+  }
+  .post-content p {
+    color: var(--black);
+  }
+  .post-content pre {
+    font-size: 1.1rem;
+  }
+  .post-img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 20rem;
+  }
+  .post-alt-links {
+    margin-bottom: 6rem;
+  }
+  .post-alt-links h5 {
+    color: var(--pink);
+    font-size: 1.3rem;
+    margin-top: 0.2rem;
+  }
+  .post-alt-links a {
+    color: var(--black);
+    font-size: 1.2rem;
+    transition: 0.4s;
+  }
+  .post-alt-links a:hover {
+    color: var(--pink);
+  }
+  .post-alt-post {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .post-alt-post img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 8rem;
+    height: 6rem;
+  }
+  .post-alt-post p {
+    color: var(--black);
+    font-size: 1.1rem;
+    max-width: 14rem;
+  }
+}/*# sourceMappingURL=post.css.map */

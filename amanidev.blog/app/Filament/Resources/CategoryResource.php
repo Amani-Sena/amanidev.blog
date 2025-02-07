@@ -25,7 +25,11 @@ class CategoryResource extends Resource
 
     protected static ?string $recordTitleAttribute = 'name';
 
+<<<<<<< HEAD
     protected static ?string $navigationIcon = 'heroicon-o-tag';
+=======
+    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+>>>>>>> 37b3945 (Atualizações de performance e do Readme)
 
     public static function form(Form $form): Form
     {

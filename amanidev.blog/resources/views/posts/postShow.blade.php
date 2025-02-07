@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,11 +60,21 @@
     </header>
     <main>
         
+=======
+@extends('layouts.app_alt')
+@section('title', "$post->title - amanidev.blog")
+    
+@section('content')
+>>>>>>> 37b3945 (Atualizações de performance e do Readme)
         <section id="section-post">
             <div class="post-container">
                 <div class="post-content">
                     <h1>{{ $post->title }}</h1>
+<<<<<<< HEAD
                     <img class="post-img" src="../storage/{{$post->image}}" alt="Imagem do Post">
+=======
+                    <img src="{{ asset('storage/'.$post->image) }}" alt="Post Thumbnail">
+>>>>>>> 37b3945 (Atualizações de performance e do Readme)
                     <p>{!! $post->content !!}</p>
                 </div>
                 <div class="post-alt-links">
@@ -82,7 +93,11 @@
                     @foreach ($recent_posts as $post)
                     <a href="/post/{{$post->id}}">
                         <div class="post-alt-post">
+<<<<<<< HEAD
                             <img src="../storage/{{$post->image}}" alt="Imagem do Post">
+=======
+                            <img src="{{ asset('storage/'.$post->image) }}" alt="Post Thumbnail">
+>>>>>>> 37b3945 (Atualizações de performance e do Readme)
                             <p>{{$post->title}}</p>
                         </div>
                     </a>
@@ -101,6 +116,7 @@
             </div>
         </section>
 
+<<<<<<< HEAD
         <footer>
             <div class="footer-logo">
                 <a href="/"><img src="{{ asset('img/logo-blog.webp') }}" alt="Logo amaniDev Blog"></a>
@@ -117,3 +133,6 @@
     <script src="./../js/mobile-menu.js" defer></script>
 </body>
 </html>
+=======
+        @endsection
+>>>>>>> 37b3945 (Atualizações de performance e do Readme)
