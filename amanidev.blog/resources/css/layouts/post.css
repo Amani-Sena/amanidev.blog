@@ -38,6 +38,10 @@
 .post-content p {
   color: var(--black);
 }
+.post-content p img {
+  width: 56rem;
+  height: 31rem;
+}
 .post-content pre {
   color: var(--white);
   background-color: var(--pink);
@@ -149,8 +153,9 @@
   .post-content h2 {
     font-size: 1.8rem;
   }
-  .post-content p {
-    color: var(--black);
+  .post-content p img {
+    width: 21rem;
+    height: 14rem;
   }
   .post-content pre {
     font-size: 1.1rem;

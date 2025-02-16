@@ -40,6 +40,11 @@
 
     p {
         color: var(--black);
+
+        img {
+            width: 56rem;
+            height: 31rem;
+        }
     }
 
     pre {
@@ -168,7 +173,10 @@
         }
     
         p {
-            color: var(--black);
+            img {
+                width: 21rem;
+                height: 14rem;
+            }
         }
     
         pre {

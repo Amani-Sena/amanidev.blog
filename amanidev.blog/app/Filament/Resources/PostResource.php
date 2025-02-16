@@ -29,6 +29,7 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Illuminate\Support\Str;
+use FilamentTiptapEditor\TiptapEditor;
 
 class PostResource extends Resource
 {
@@ -49,7 +50,7 @@ class PostResource extends Resource
                     ->afterStateUpdated(fn (Set $set, ?string $state) => $set('slug', Str::slug($state))),
                     TextInput::make('slug')->required(),
                     FileUpload::make('image')->image()->directory('posts'),
-                    RichEditor::make('content'),
+                    TiptapEditor::make('contentr'),
                     Toggle::make('is_published'),
                     
                 ])
