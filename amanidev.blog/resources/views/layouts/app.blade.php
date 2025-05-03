@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,14 +20,25 @@
 
 <body>
     <header id="header">
-        <div class="header-logo">
-            <a href="/"><img src="{{ asset('img/logo-blog.webp') }}" alt="Logo amaniDev Blog"></a>
+        <div class="header-logo-container">
+            <div class="header-logo">
+                <a href="/"><img src="{{ asset('img/logo-blog.webp') }}" alt="Logo amaniDev Blog"></a>
+            </div>
+            <nav class="header-nav">
+                <a href="/" class="nav-link">Início</a>
+                <a href="/posts" class="nav-link">Blog</a>
+                <a href="https://amanidev.com/#br" class="nav-link">Portfólio</a>
+            </nav>
         </div>
-        <nav class="header-nav">
-            <a href="/" class="nav-link">Início</a>
-            <a href="/posts" class="nav-link">Blog</a>
-            <a href="https://amanidev.com/#br" class="nav-link">Portfólio</a>
-        </nav>
+
+
+
+        <form method="GET" action="{{ route('posts.index') }}" class="header-search-bar">
+            <input type="text" name="search" placeholder="Pesquisar..." class="search-bar" id="search-input"
+                value="{{ request('search') }}">
+            <input type="hidden" name="category" value="{{ request('category') }}">
+            <button type="submit" class="btn-search" id="btn-search" disabled>Pesquisar</button>
+        </form>
 
         <div class="btn-menu" id="btn-menu" onclick="openMenu('con-side-menu-op')">
             <div class="line-1"></div>
@@ -45,7 +57,9 @@
                             <h1 id="home-menu"><a href="/" id="home_menu">Início</a></h1>
                         </li>
                         <li>
-                            <a href="/posts"><h1 id="about-menu">Blog</h1></a>
+                            <a href="/posts">
+                                <h1 id="about-menu">Blog</h1>
+                            </a>
                         </li>
                         <li>
                             <h1><a href="https://amanidev.com" target="_blank" id="blog_menu">Portfólio</a></h1>
@@ -54,10 +68,14 @@
                     <div class="menu-contact">
                         <h5 id="hello_menu">Diga Olá</h5>
                         <div class="menu-contact-icons">
-                            <a href="https://wa.me/+5521970600875" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                            <a href="https://github.com/Amani-Sena" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/amani-sena-632231252/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="https://www.instagram.com/amanidev_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://wa.me/+5521970600875" target="_blank"><i
+                                    class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://github.com/Amani-Sena" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/amani-sena-632231252/" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/amanidev_/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
 
                         </div>
                     </div>
@@ -67,23 +85,29 @@
     </header>
 
 
-<main>
-    @yield('content')
-</main>
+    <main>
+        @yield('content')
+    </main>
 
 
-<footer>
-    <div class="footer-logo">
-        <a href="/"><img src="{{ asset('img/logo-blog.webp') }}" alt="Logo amaniDev Blog"></a>
-    </div>
-    <div class="footer-social-icons">
-        <a href="https://wa.me/+5521970600875" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-        <a href="https://github.com/Amani-Sena" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/amanidev/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/amanidev_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-    </div>
-</footer>
+    <footer>
+        <div class="footer-logo">
+            <a href="/"><img src="{{ asset('img/logo-blog.webp') }}" alt="Logo amaniDev Blog"></a>
+        </div>
+        <div class="footer-social-icons">
+            <a href="https://wa.me/+5521970600875" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://github.com/Amani-Sena" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/amanidev/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/amanidev_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
 
-<script src="./build/assets/mobile-menu-l0sNRNKZ.js" defer></script>
+    <script
+        src="{{ asset('build/' . json_decode(file_get_contents(public_path('build/manifest.json')), true)['resources/js/mobile-menu.js']['file']) }}"
+        defer></script>
+
+
+
 </body>
+
 </html>

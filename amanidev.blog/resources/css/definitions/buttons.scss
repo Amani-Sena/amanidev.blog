@@ -124,3 +124,38 @@
     gap: 1.6rem;
   }
   
+
+  //------------------------------------------------
+
+
+  .btn-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    cursor: default;
+    height: 2.6rem;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: var(--pink);
+    font-family: "coffee-light";
+    font-size: 1.1rem;
+    border: 1px solid var(--pink);
+  }
+  
+  .btn-search.show:hover {
+    transition: 0.4s ease-in-out;
+    background: transparent;
+    cursor: pointer;
+    color: var(--pink);
+    border: none;
+    border-bottom: 1px solid var(--pink);
+    border-right: 1px solid var(--pink);
+  }
+  
+  
+.btn-search.show {
+  background-color: var(--pink);
+  color: var(--whiteF);
+}

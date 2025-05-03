@@ -23,6 +23,9 @@ class AdminPanelProvider extends PanelProvider
     public function panel(Panel $panel): Panel
     {
         return $panel
+            ->brandLogo(asset('img/logo-blog.webp'))
+            ->favicon(asset('img/favicon.webp'))
+            ->brandLogoHeight('2.6rem')
             ->default()
             ->id('admin')
             ->path('admin')

@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-EcdsVwgf.css",
+    "file": "assets/app-B0D6MIr4.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -16,6 +16,10 @@
     "file": "assets/Louis George Cafe-7YJdkYWs.woff",
     "src": "resources/fonts/Louis George Cafe.woff"
   },
+  "resources/fonts/cocogoose-pro.block-border.woff2": {
+    "file": "assets/cocogoose-pro.block-border-B_wOCzB1.woff2",
+    "src": "resources/fonts/cocogoose-pro.block-border.woff2"
+  },
   "resources/js/app.js": {
     "file": "assets/app-Xaw6OIO1.js",
     "name": "app",
@@ -28,16 +32,16 @@
     "src": "resources/js/category-selector.js",
     "isEntry": true
   },
-  "resources/js/handleScroll.js": {
-    "file": "assets/handleScroll-DKE7agFt.js",
-    "name": "handleScroll",
-    "src": "resources/js/handleScroll.js",
-    "isEntry": true
-  },
   "resources/js/mobile-menu.js": {
-    "file": "assets/mobile-menu-l0sNRNKZ.js",
+    "file": "assets/mobile-menu-DTxbclQj.js",
     "name": "mobile-menu",
     "src": "resources/js/mobile-menu.js",
+    "isEntry": true
+  },
+  "resources/js/writer.js": {
+    "file": "assets/writer-CXhUAGK-.js",
+    "name": "writer",
+    "src": "resources/js/writer.js",
     "isEntry": true
   }
 }

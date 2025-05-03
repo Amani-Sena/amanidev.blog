@@ -28,3 +28,16 @@ function openMenu($var) {
     })
 }
 
+const input = document.getElementById('search-input');
+const button = document.getElementById('btn-search');
+
+input.addEventListener('input', () => {
+  if (input.value.trim() !== "") {
+    button.disabled = false;
+    button.classList.add('show');
+  } else {
+    button.disabled = true;
+    button.classList.remove('show');
+  }
+});
+

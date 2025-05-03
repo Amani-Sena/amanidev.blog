@@ -8,8 +8,8 @@ export default defineConfig({
                 'resources/css/app.css',
                 'resources/js/app.js',
                 'resources/js/category-selector.js',
-                'resources/js/handleScroll.js',
-                'resources/js/mobile-menu.js'
+                'resources/js/mobile-menu.js',
+                'resources/js/writer.js',
             ],
             refresh: true,
         }),

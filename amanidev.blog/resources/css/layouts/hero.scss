@@ -1,66 +1,88 @@
 .bg-hero {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.253), var(--black));
-  }
-
-  .con-video-hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 90vh;
-    padding: 0;
-    z-index: -4;
-    background-attachment: fixed;
-  }
-
-  #video-hero {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 
+  h1 {
+    font-family: 'cocogoose';
+    font-size: 4.4rem;
+    color: var(--pink);
+    margin-top: 0.8rem;
+    text-align: center;
+  }
+}
+
+.hero-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2.6rem;
+
+  i {
+    font-size: 2.2rem;
+    color: var(--black);
+    transition: 0.3s;
+  }
+
+  i:hover {
+    color: var(--pink);
+    transform: scale(1.1);
+  }
+}
+
+#down-hero {
+  margin-top: 4rem;
+  font-size: 2rem;
+}
+
+
+.up-down {
+  animation: UpDown 1s infinite alternate;
+}
+
+@keyframes UpDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-6px);
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+
+  .hero {
     h1 {
-      color: var(--pink);
-      text-align: center;
-      z-index: 20;
+      font-size: 2.6rem;
     }
 
-    h2 {
-      font-family: "coffee";
-      color: var(--white);
-      text-align: center;
-
-    }
-    
-    i {
-      color: var(--whiteF);
+    #down-hero {
       margin-top: 2rem;
-      font-size: 1.6rem;
     }
-  
   }
 
-  .up-down {
-    animation: UpDown 1s infinite alternate;
-  }
+  .hero-icons {
+    gap: 1.6rem;
+    margin-top: 2rem;
   
-  @keyframes UpDown {
-    from {
-      transform: translateY(0);
-    }
-    to {
-      transform: translateY(-6px);
+    i {
+      font-size: 2rem;
     }
   }
+
+}

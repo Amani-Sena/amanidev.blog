@@ -2,12 +2,12 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     gap: 2rem;
     position: fixed;
     width: 100%;
     height: 6rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
     z-index: 99;
 }
 
@@ -29,8 +29,16 @@ header {
     gap: 2.4rem;
 }
 
+.header-logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
 .nav-link {
-  color: var(--white);
+  color: var(--black);
   font-size: 1.28rem;
   transition: 0.4s;
 }
@@ -55,6 +63,39 @@ header {
 
 .nav-link-alt:hover {
   color: var(--pink);
+}
+
+.header-search-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  margin-right: 4rem;
+  gap: 1rem
+}
+
+.search-bar {
+  display: flex;
+  border: none;
+  background: transparent;
+  font-family: "coffee-light";
+  border-bottom: 1px solid var(--pink);
+  padding-bottom: 0.6rem;
+  padding-left: 0.6rem;
+  color: var(--gray);
+  font-size: 1.1rem;
+  width: 8rem;
+}
+
+.search-bar:focus {
+  width: 14rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.search-bar:not(:placeholder-shown) {
+  width: 14rem;
+  transition: all 0.4s ease-in-out;
+
 }
 
 //-------------------------------------------------------------------------
@@ -105,7 +146,7 @@ header {
 
   //--------------------------------------------------------------------------------------
 
-  .con-side-menu-op {
+.con-side-menu-op {
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -114,6 +155,8 @@ header {
     display: flex;
     opacity: 100%;
     z-index: 97;
+    display: none;
+    transition: none;
     justify-content: center;
     background-color: var(--blackOp);
     transition: 1s ease-in;
@@ -122,7 +165,7 @@ header {
 .side-menu {
   background-color: var(--white);
   border-left: 1px inset var(--pink);
-  width: 30vw;
+  width: 26vw;
   height: 100vh;
   position: fixed;
   display: flex;
@@ -132,7 +175,6 @@ header {
   right: 0;
   top: 0;
   z-index: 98;
-  min-width: 36.8rem;
 }
 
 .con-side-menu-op.show-side-menu {

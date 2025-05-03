@@ -12,4 +12,9 @@
   font-family: "coffee-bold";
   src: url("../fonts/Louis George Cafe Bold.woff");
   font-display: swap;
+}
+@font-face {
+  font-family: "cocogoose";
+  src: url("../fonts/cocogoose-pro.block-border.woff2");
+  font-display: swap;
 }/*# sourceMappingURL=fonts.css.map */

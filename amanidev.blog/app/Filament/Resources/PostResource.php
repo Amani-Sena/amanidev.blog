@@ -50,7 +50,7 @@ class PostResource extends Resource
                     ->afterStateUpdated(fn (Set $set, ?string $state) => $set('slug', Str::slug($state))),
                     TextInput::make('slug')->required(),
                     FileUpload::make('image')->image()->directory('posts'),
-                    TiptapEditor::make('contentr'),
+                    TiptapEditor::make('content'),
                     Toggle::make('is_published'),
                     
                 ])

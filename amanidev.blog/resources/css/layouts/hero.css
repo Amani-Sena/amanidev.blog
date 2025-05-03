@@ -4,25 +4,8 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.253), var(--black));
-}
-
-.con-video-hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  height: 90vh;
-  padding: 0;
-  z-index: -4;
-  background-attachment: fixed;
-}
-
-#video-hero {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  min-height: 100vh;
 }
 
 .hero {
@@ -30,22 +13,37 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: relative;
 }
 .hero h1 {
+  font-family: "cocogoose";
+  font-size: 4.4rem;
   color: var(--pink);
-  text-align: center;
-  z-index: 20;
-}
-.hero h2 {
-  font-family: "coffee";
-  color: var(--white);
+  margin-top: 0.8rem;
   text-align: center;
 }
-.hero i {
-  color: var(--whiteF);
-  margin-top: 2rem;
-  font-size: 1.6rem;
+
+.hero-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2.6rem;
+}
+.hero-icons i {
+  font-size: 2.2rem;
+  color: var(--black);
+  transition: 0.3s;
+}
+.hero-icons i:hover {
+  color: var(--pink);
+  transform: scale(1.1);
+}
+
+#down-hero {
+  margin-top: 4rem;
+  font-size: 2rem;
 }
 
 .up-down {
@@ -58,5 +56,20 @@
   }
   to {
     transform: translateY(-6px);
+  }
+}
+@media screen and (max-width: 900px) {
+  .hero h1 {
+    font-size: 2.6rem;
+  }
+  .hero #down-hero {
+    margin-top: 2rem;
+  }
+  .hero-icons {
+    gap: 1.6rem;
+    margin-top: 2rem;
+  }
+  .hero-icons i {
+    font-size: 2rem;
   }
 }/*# sourceMappingURL=hero.css.map */
