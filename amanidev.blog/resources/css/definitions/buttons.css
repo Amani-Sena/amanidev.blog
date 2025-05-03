@@ -141,4 +141,19 @@
 .btn-search.show {
   background-color: var(--pink);
   color: var(--whiteF);
+}
+
+.btn-search-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  cursor: default;
+  height: 2.6rem;
+  background: var(--pink);
+  outline: none;
+  border: none;
+  color: var(--whiteF);
+  font-family: "coffee-light";
+  font-size: 1.1rem;
 }/*# sourceMappingURL=buttons.css.map */

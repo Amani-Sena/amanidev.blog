@@ -9,6 +9,8 @@ function openMenu($var) {
     } else if(menu.classList.contains("close-side-menu")) {
         menu.classList.remove("close-side-menu");
         menu.classList.add("show-side-menu");
+    } else {
+        menu.classList.add("show-side-menu");
     }
 
     if(btn.classList.contains("btn-close")) {

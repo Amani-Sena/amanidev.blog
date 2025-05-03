@@ -98,6 +98,30 @@ header {
 
 }
 
+//------------------------------------------------------------
+
+.header-search-bar-mobile {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  margin-right: 4rem;
+  gap: 1rem
+}
+
+.search-bar-mobile {
+  display: flex;
+  border: none;
+  background: transparent;
+  font-family: "coffee-light";
+  border-bottom: 1px solid var(--pink);
+  padding-bottom: 0.6rem;
+  padding-left: 0.6rem;
+  color: var(--gray);
+  font-size: 1.1rem;
+  width: 8rem;
+}
+
 //-------------------------------------------------------------------------
 
 .btn-menu {
@@ -152,10 +176,9 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    display: flex;
+    display: none;
     opacity: 100%;
     z-index: 97;
-    display: none;
     transition: none;
     justify-content: center;
     background-color: var(--blackOp);
@@ -178,21 +201,25 @@ header {
 }
 
 .con-side-menu-op.show-side-menu {
+  display: flex !important;
   animation: openOp 1s;
   animation-fill-mode: forwards;
 }
 
 .show-side-menu .side-menu {
+  display: flex !important;
   animation: openMenu 0.6s;
   animation-fill-mode: forwards;
 }
 
 .con-side-menu-op.close-side-menu {
+  display: flex !important;
   animation: closeOp 1.4s;
   animation-fill-mode: forwards;
 }
 
 .close-side-menu .side-menu {
+  display: flex !important;
   animation: closeMenu 0.6s;
   animation-fill-mode: forwards;
 }
@@ -351,6 +378,10 @@ header {
         a:hover {
             color: var(--pink);
         }
+    }
+
+    .header-search-bar {
+      display: none;
     }
 
     header {

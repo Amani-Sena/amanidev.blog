@@ -45,7 +45,7 @@
             <div class="line-2"></div>
         </div>
 
-        <div class="con-side-menu-op close-side-menu" id="con-side-menu-op">
+        <div class="con-side-menu-op" id="con-side-menu-op">
             <div class="side-menu">
                 <div class="con-side-menu">
                     <div class="menu-header">
@@ -76,9 +76,16 @@
                                     class="fa-brands fa-linkedin"></i></a>
                             <a href="https://www.instagram.com/amanidev_/" target="_blank"><i
                                     class="fa-brands fa-instagram"></i></a>
-
                         </div>
                     </div>
+
+                    <form method="GET" action="{{ route('posts.index') }}" class="header-search-bar-mobile">
+                        <input type="text" name="search" placeholder="Pesquisar..." class="search-bar-mobile"
+                            value="{{ request('search') }}">
+                        <input type="hidden" name="category" value="{{ request('category') }}">
+                        <button type="submit" class="btn-search-mobile">Pesquisar</button>
+                    </form>
+
                 </div>
             </div>
         </div>
